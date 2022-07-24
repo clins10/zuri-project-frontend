@@ -223,7 +223,6 @@ footer {
     
     .lnks {
         display:flex;
-        /* justify-content: space-around; */
         justify-content: space-between;
         align-items: center;
         padding: 1em 0;
@@ -248,7 +247,6 @@ footer {
     }
 
     button {
-        // background-color: #8f2828;
         width: 90%;
         white-space: wrap;
         color: rgb(59, 44, 44);
