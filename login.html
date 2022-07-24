@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- LOGIN -->
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav>
+            
+            <ul class="lnks">
+                <li><a href="#" class="active">Login</a></li>
+                <li ><a href="#" id="no-acct">Don't have an account</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>            
+        </nav>
+
+        <!-- LOGIN FORM -->
+        <main>
+            <div class="form-wrapper">
+                <form action="login" method="post" class="form">
+                    <!-- <label for="username">Email Address:</label> -->
+                    <input type="text" name="username"  placeholder="Email Address" id="username" required>
+                    <!-- <label for="password">Password:</label> -->
+                    <input type="password" name="password"  placeholder="password" id="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="horizon-line">
+                    <hr id="LH"> 
+                    OR
+                    <hr id="RH">
+                </div>
+               
+                <button type="submit">Signin with SSO</button>
+                <button><a href="#">Forgot Password?</a></button>
+                
+            </div>
+            
+        </main>
+
+    </div>
+    <br>
+
+    
+    <!-- FOOTER SECTION-->
+    <footer>
+        <p>&copy;Copyright 2022 Team-28 @Price_Compare </p>
+    </footer>
+
+
+</body>
+</html>
