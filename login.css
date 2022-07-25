@@ -21,13 +21,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
-    margin: 0 .9em;
+    margin: 0 1.5em;
     list-style: none;
 }
 
-a#no-acct {
-    margin-left: 53rem;
-}
 
 nav li a {
     color: #fff;
@@ -41,9 +38,14 @@ nav li a {
   border-radius: 5px;
 }
 
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
 button {
     // background-color: #8f2828;
-    width: 100%;
+    width: 95%;
     white-space: wrap;
     color: rgb(59, 44, 44);
     border: none;
@@ -98,6 +100,10 @@ form.form {
     height: 95%;
     margin: 0 auto;
     gap: .8em;
+}
+
+form.form button {
+    width: 100%;
 }
 
 input {
@@ -158,12 +164,10 @@ footer {
 
     .lnks {
         flex-wrap: wrap;
-        max-width: 50%;
+        width: 50%;
+        gap: .4em;
     }
 
-    a#no-acct {
-        margin-left: 0rem;
-    }
     .form-wrapper {
         max-width: 90%;
         max-height: 90%;
@@ -201,7 +205,7 @@ footer {
         background-color: black;
         width: 30%;
         margin: 0 auto;
-        margin-right: 1.5em;
+        margin-right: 1.3em;
     }
     
     #RH {
@@ -209,7 +213,7 @@ footer {
         background-color: black;
         width: 30%;
         margin: 0 auto;
-        margin-left: 1.5em;
+        margin-left: 1.3em;
     }
     
     .container {
@@ -247,7 +251,7 @@ footer {
     }
 
     button {
-        width: 90%;
+        width: 88%;
         white-space: wrap;
         color: rgb(59, 44, 44);
         border: none;
@@ -259,6 +263,9 @@ footer {
         text-align: center;
     }
 
+    form.form button {
+        width: 90%;
+    }
     button a {
         color: rgb(59, 44, 44);
         text-decoration: none;
