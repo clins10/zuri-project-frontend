@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
 .container {
@@ -39,6 +40,7 @@ form.form label {
     font-size: 1.5em;
     text-align :left;
 }
+
 nav li a {
     text-decoration: none;
     font-size: 1.2em;
@@ -59,10 +61,9 @@ h1 {
 button {
     background-color: black;
     color: white;
-    width: 95%;
-    white-space: wrap;
+    width: 100%;
     border: none;
-    padding: .6em 1em;
+    padding: .8em 1em;
     border-radius: 5px;
     font-size: 1.2em;
     cursor: pointer;
@@ -93,8 +94,8 @@ button a:hover {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    max-width: 30%;
-    max-height: 50%;
+    max-width: 45%;
+    max-height: 45%;
     background-color: #fff;
     padding: 2.5em 1em;
     gap: .8em;
@@ -105,15 +106,10 @@ button a:hover {
 form.form {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     margin-top: -3em;
     margin: 0 auto;
-}
-
-
-form.form button {
-    width: 100%;
 }
 
 #psswrd {
@@ -121,43 +117,42 @@ form.form button {
 }
 
 #login {
-    margin: 1em 0;
+    margin-top: .5em;
 }
 
-
 input {
-    width: 92%;
-    padding: .6em 0em;
+    width: 95%;
     border-radius: 5px;
     font-size: 1em;
     border: 2px solid #000;
-    padding: .8em .8em;
+    padding: .8em 0.8em;
     margin: .5em auto;
 }
 
 /* Horizontal Line*/
 .horizon-line {
-    display: inline-block;
-    max-width: 100%;
+    background-color: #fff;
     text-align: center;
-    margin-bottom: .8em;
+    padding: 1.5em 0;
 }
 
 #LH {
-    display: inline-block;
+    position: relative;
     background-color: black;
-    width: 35%;
+    width: 98%;
     margin: 0 auto;
-    margin-right: 1.8em;
+    margin-top: .2em;
 }
 
-#RH {
-    display: inline-block;
-    background-color: black;
-    width: 35%;
-    margin: 0 auto;
-    margin-left: 1.8em;
+#LH-P {
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    padding: 0 .7em;
+    background-color: #fff;
+    color: #000;
 }
+
 
 .sign-up {
     display: flex;
@@ -182,104 +177,64 @@ footer {
 
 /* MOBILE-VIEW */
 @media screen and (max-width: 600px) {
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .lnks {
-        flex-wrap: wrap;
-        width: 50%;
-        gap: .4em;
-    }
-
+    
     .form-wrapper {
         max-width: 90%;
         max-height: 90%;
         margin: 0 auto;
         padding: 1em 0;
-        margin-top: 3em;
         margin-bottom: 5em;
-        padding: 2em 0;
     }
 
     form.form {
         max-width: 100%;
         height: 100%;
         margin: 0 auto;
-        gap: .8em;
+        padding: 1em 0;
+    }
+
+    label {
+        text-align: center;
+        margin-left: .4em;
     }
     
+    
     input {
-        width: 90%;
-        padding: .6em 0em;
+        width: 85%;
         border-radius: 5px;
         font-size: 1em;
-        margin: 0 auto;
-        text-align: center;
+        padding: .8em .6em;
     }
     
     .horizon-line {
         display: inline-block;
         max-width: 100%;
         text-align: center;
+        padding: .8em 0;
+        margin-top: -1em;
     }
     
     #LH {
         display: inline-block;
         background-color: black;
-        width: 30%;
+        width: 86%;
         margin: 0 auto;
-        margin-right: 1.3em;
+
     }
-    
-    #RH {
-        display: inline-block;
-        background-color: black;
-        width: 30%;
-        margin: 0 auto;
-        margin-left: 1.3em;
-    }
-    
-    .container {
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    nav {
-        background-color: #8f2828;
-    }
-    
-    .lnks {
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em 0;
-        margin: 0 .9em;
-        list-style: none;
-    }
-    
-    a#no-acct {
-        margin-left: 53rem;
-    }
-    
-    nav li a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2em;
-    }
-    
-    .active {
-      background: #c4c0c0;
-        padding: .2em .8em;
-        border-radius: 5px;
+     
+
+    #LH-P {
+        position: absolute;
+        top: 101.8%;
+        left: 43%;
+        padding: 0 .6em;
+        background-color: #ffff;
+        color: #000;
     }
 
     button {
-        width: 88%;
+        width: 94%;
         white-space: wrap;
-        color: rgb(59, 44, 44);
         border: none;
         padding: .6em 1em;
         border-radius: 5px;
@@ -288,12 +243,9 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
+    
 
-    form.form button {
-        width: 90%;
-    }
     button a {
-        color: rgb(59, 44, 44);
         text-decoration: none;
     }
 }

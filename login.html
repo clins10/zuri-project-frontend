@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,900&display=swap"
+        rel="stylesheet">
+   
+
 </head>
 <body>
     <!-- LOGIN -->
@@ -24,16 +29,15 @@
             <h5>Log in</h5>
             <div class="form-wrapper">
                 <form action="login" method="post" class="form">
-                    <label for="email" style="font-size: 1.4em;">Email</label>
+                    <label for="email" style="font-size: 1em;">Email</label>
                     <input type="email" name="username"  placeholder="Email Address" required>
-                    <label for="password" id="psswrd" style="font-size: 1.4em;">Password</label>
+                    <label for="password" id="psswrd" style="font-size: 1em;">Password</label>
                     <input type="password" name="password"  placeholder="password" required>
                     <button type="submit" title="click to login" id="login">Login</button>
                 </form>
                 <div class="horizon-line">
                     <hr id="LH"> 
-                    OR
-                    <hr id="RH">
+                    <p id="LH-P">OR</p>
                 </div>
                
                 <button type="submit" title="google login"><a href="#"></a>Continue with Google</a></button>
