@@ -14,21 +14,21 @@
         <nav>
             
             <ul class="lnks">
-                <li><a href="#" class="active">Login</a></li>
-                <li><span>Don't have account ?  <a href="#">Sign up</a> </span></li>
+                <li><a href="#">Login</a></li>
+    
             </ul>            
         </nav>
 
         <!-- LOGIN FORM -->
         <main>
+            <h5>Log in</h5>
             <div class="form-wrapper">
-                <h1>LOGIN</h1>
                 <form action="login" method="post" class="form">
-                    <!-- <label for="username">Email Address:</label> -->
-                    <input type="text" name="username"  placeholder="Email Address" id="username" required>
-                    <!-- <label for="password">Password:</label> -->
-                    <input type="password" name="password"  placeholder="password" id="password" required>
-                    <button type="submit" title="click to login">Login</button>
+                    <label for="email" style="font-size: 1.4em;">Email</label>
+                    <input type="email" name="username"  placeholder="Email Address" required>
+                    <label for="password" id="psswrd" style="font-size: 1.4em;">Password</label>
+                    <input type="password" name="password"  placeholder="password" required>
+                    <button type="submit" title="click to login" id="login">Login</button>
                 </form>
                 <div class="horizon-line">
                     <hr id="LH"> 
@@ -36,9 +36,17 @@
                     <hr id="RH">
                 </div>
                
-                <button type="submit" title="alternative login">Signin with SSO</button>
-                <button title="password reset"><a href="#">Forgot Password?</a></button>
+                <button type="submit" title="google login"><a href="#"></a>Continue with Google</a></button>
+
+                <button type="submit" title="facebook login"><a href="#">Continue with Facebook</a></button>
+
+                <button type="submit" title="twiiter login">
+                    <a href="#">Continue with Twitter</a>
+                </button>
                 
+                <div class="sign-up">
+                    <p>Don't have an Account? <a href="#">Register here</a></p>   
+                </div>
             </div>
             
         </main>
