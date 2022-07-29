@@ -2,289 +2,108 @@
 <html>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- <script src="https://kit.fontawesome.com/0b20a86ad5.js" crossorigin="anonymous"></script>   
-    
-    
-<style>
-* {
-  box-sizing: border-box;
-}
-body {
-margin: 0;
-font-family: 'Poppins', sans-serif;
-    background-color: #efefef;
-}
-
-.white-bg {
-    background-color: #fff;
-    width: 70%;
-    margin: auto;
-    padding: 20px;
-    }
-    
-/* Column container */
-.row {  
-  display: flex;
-  flex-flow: row wrap;
-}
-
-/* Create three menu columns that sits next to each other */
-/* Left column */
-.left-column {
-  flex: 10%;
-  background-color: #f1f1f1;
-}
-
-/* Menu column */
-.menu-column {
-  flex: 70%;
-  background-color: white;
-}
-
-/* Right column */
-.right-column {
-  flex: 10%;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-li a {
-  display: block;
-  color: #000;
-  font-size: 12px;
-  padding: 5px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  color: #ddd;
-}
-
-a.button:link, a.button:visited {
-background-color: #053573;
-color: white;
-padding: 5px 40px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 12px;
-}
-.search .search-container {
-  float: right;
-}
-
-.search:after {
-display: table;
-content: "";
-clear: both;
-    }
-    
-.search input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  margin-right: 0px;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #efefef;
-}
-
-::placeholder {
-  font-size: 12px;
-}    
-
-.search .search-container button {
-  padding: 7px 25px;
-  margin-top: 8px;
-  background: #000;
-  font-size: 10px;
-  border-radius: 5px 0 0 5px;
-    border: none;
-  cursor: pointer;
-    color:aliceblue;
-}
-    
-.about-content {
-        padding: 20px;
-    }
-.title {
-color: gainsboro;  
-font-size: 30px;
-    }
-    
-.content-para {
-        margin-bottom: 80px;
-    }
-    
-    .update {
-        width: 50%;
-        margin: auto;
-    }
-    
-    .update > h {
-    }
-    
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 60%;
-  background: #f1f1f1;
-}
-
-form.example button {
-  float: left;
-  width: 40%;
-  padding: 10px;
-  background: #000;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.footer-col {
-        display: flex;
-  flex-flow: row wrap;
-  gap: 7rem;
-  justify-content: center;
-    margin-top: 100px;
-    font-size: 12.5px;
-    }
-    
-    .last-row {
-    border-top:1px solid #000;
-    margin-top: 100px;
-        width: 100%;
-        text-align: center;
-        padding-top: 20px;
-        font-size: 12px;
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b20a86ad5.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- #### CREATE NAV SECTION AND SPLIT INTO COLUMNS #### -->
     <div class="white-bg">
-<div class="row">
-<div class="left-column">
+        <div class="row">
+            <div class="left-column">
 
-</div>
-<div class="menu-column">
-<nav>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Deals</a></li>
-  <li><a href="#contact">Categories</a></li>
-  <li><a href="#about">Stores</a></li>
-  <li><a href="#about">Price Tracker</a></li>
-</ul>
-</nav>
-</div>
-<div class="right-column">
-<a class="button" href="#">Sign In</a>
-</div>
-</div>
-<div class="search">
-       <div class="search-container">
-    <form action="/action_page.php">
-      <button type="submit">All <i class="fa-solid fa-chevron-down"></i></button><input type="text" placeholder="what are you searching for?" name="search">
-      
-    </form>
-  </div>
-    </div>
-<div class="about-content">
-<h2 class="title">About Us</h2>
-<p class="content-para">I's only best to make decisions when you have all necessary information at hand. We are dedicated to making your decision process easy and stress free. We ore ranked one of the best Price Comparison Services, hence best believe we only give top notch, reliable Services.
-</p>
-<h2 class="title">Finding your Right Product</h2>
-<p class="content-para">We care about getting you your right product and that's why we have gathered great amount of information on selected products. our search tool will help you find your right product and enable you shop smartly.
-Also included:
-Wide range of Mobile, Laptops gadgets and accessories etc
-See what's trending around you
-Access product reviews.</p>
-<h2 class="title">Getting your Best Brand</h2>
-<p class="content-para">At Shop Smart, we don't just have your best products, we have your most preferred brands on display. We understand there are just certain brands you trust as everyone has their preference: so we have collated data from your best brands, all you need it's to go ahead and shop smart.</p>
-<h2 class="title">Finding Your Right Price</h2>
-<p class="content-para">While we provide you with the best products from your favorite brands, we wouldn't want you to buy any product more than what is necessary; so we have a wide range of various Vendors price Selection over any Product.</p>
-        
-        
+            </div>
+            <div class="menu-column">
+                <nav>
+                    <ul>
+                      <li><a class="active" href="#home">Home</a></li>
+                      <li><a href="#news">Deals</a></li>
+                      <li><a href="#contact">Categories</a></li>
+                      <li><a href="#about">Stores</a></li>
+                      <li><a href="#about">Price Tracker</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-column">
+                <a class="button" href="#">Sign In</a>
+            </div>
         </div>
+         <!-- #### SEARCH FORM #### -->
+        <div class="search">
+               <div class="search-container">
+                    <form action="/action_page.php">
+                      <button type="submit">All <i class="fa-solid fa-chevron-down"></i></button><input type="text" placeholder="what are you searching for?" name="search">
+
+                    </form>
+                </div>
+        </div>
+         <!-- #### CONTENT SECTION #### -->
+        <div class="about-content">
+            <h2 class="title">About Us</h2>
+            <p class="content-para">I's only best to make decisions when you have all necessary information at hand. We are dedicated to making your decision process easy and stress free. We ore ranked one of the best Price Comparison Services, hence best believe we only give top notch, reliable Services.
+            </p>
+            <h2 class="title">Finding your Right Product</h2>
+            <p class="content-para">We care about getting you your right product and that's why we have gathered great amount of information on selected products. our search tool will help you find your right product and enable you shop smartly.
+            Also included:
+            Wide range of Mobile, Laptops gadgets and accessories etc
+            See what's trending around you
+            Access product reviews.</p>
+            <h2 class="title">Getting your Best Brand</h2>
+            <p class="content-para">At Shop Smart, we don't just have your best products, we have your most preferred brands on display. We understand there are just certain brands you trust as everyone has their preference: so we have collated data from your best brands, all you need it's to go ahead and shop smart.</p>
+            <h2 class="title">Finding Your Right Price</h2>
+            <p class="content-para">While we provide you with the best products from your favorite brands, we wouldn't want you to buy any product more than what is necessary; so we have a wide range of various Vendors price Selection over any Product.</p>
+
+        </div>
+         <!-- #### CREATE NEWSLETTER UPDATE SECTION #### -->
         <div class="update"><h3>Get update on Deals and Prices</h3>
-<p style="font-size: 12px;">Receive Updates and others you would actually be interested in.<br>Unsubscribe any time
-</p>
-              <form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search2">
-  <button type="submit">Subscribe</button>
-</form>
-   </div> 
-        
+            <p style="font-size: 12px;">Receive Updates and others you would actually be interested in.<br>Unsubscribe any time
+            </p>
+            <form class="example" action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search2">
+              <button type="submit">Subscribe</button>
+            </form>
+        </div> 
+         <!-- #### CREATE FOOTER #### -->
         <footer class="footer-col">
-    <div>
-    <b>Categories</b><br>
-    Mobiles <br>
-    Laptops<br>
-    Tablets <br> 
-    Accessories<br>
-    Appliances <br>
+            <div>
+                <b>Categories</b><br>
+                Mobiles <br>
+                Laptops<br>
+                Tablets <br> 
+                Accessories<br>
+                Appliances <br>
+            </div>
+            <div>
+                <b>Brands</b><br>
+                Apple<br>
+                Samsung<br>
+                Tecno<br>
+                Infinix<br>
+                Nokia<br>
+                Hp<br>
+                Lenovo<br>
+            </div>
+            <div>
+                <b>Site</b><br>
+                About us<br>
+                Team<br>
+                Merchant sign up<br>
+                User Guide<br>
+                User Guide
+            </div>
+            <div>
+                <b>Support</b><br>
+                Contact Us<br>
+                Help Center<br>
+                Merchant Sign Up<br>
+                Reviews<br>
+                Privacy Policy
+            </div>
+            <div class="last-row">
+                (c) 2022 Shopsmart.com. All Rights Reserved
+            </div>
+        </footer>
     </div>
-    <div>
-    <b>Brands</b><br>
-    Apple<br>
-    Samsung<br>
-    Tecno<br>
-    Infinix<br>
-    Nokia<br>
-    Hp<br>
-    Lenovo<br>
-    </div>
-    <div>
-    <b>Site</b><br>
-    About us<br>
-    Team<br>
-    Merchant sign up<br>
-    User Guide<br>
-    User Guide
-    </div>
-        <div>
-    <b>Support</b><br>
-    Contact Us<br>
-    Help Center<br>
-    Merchant Sign Up<br>
-    Reviews<br>
-    Privacy Policy
-    </div>
-        <div class="last-row">
-            (c) 2022 Shopsmart.com. All Rights Reserved
-        </div>
-    </footer>
-    </div>
-    
-    
 </body>
-
-<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Apr 2019 03:55:28 GMT -->
 </html>
