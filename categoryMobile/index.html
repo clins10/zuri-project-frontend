@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Category</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12">
+            <!--for first section-->
+            <div class="container-1">
+               <div class="head">
+                  <header>
+                     <div class="nav navbar">
+                        <img class="logo" src="images/logo.png" alt="logo">
+                        <ul>
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">Deals</a></li>
+                           <li><a href="#">Category</a></li>
+                           <li><a href="#">Stores</a></li>
+                           <li><a href="#">Price Tracker</a></li>
+                        </ul>
+                        <div class="user" >
+                           <button class="btn">Sign in</button>
+                        </div>
+                     </div>
+                     <div class="new">
+                        <button class="btn">All <span>&darr;</span></button>  
+                        <input class="form-control" type="text" placeholder="what are you shopping for">
+                     </div>
+                  </header>
+               </div>
+            </div>
+            <!--end of first section-->
+
+            <!--second section-->
+            <div class="container-2">
+               <!-- <div class="body"> -->
+                  <div class="first-body">
+                    <div class="nav-1">
+                        <div class="col-md-4" style="background-color: white;">
+                           <!--categories-->
+                           <div class="heading heading-1" style="margin-bottom: 7px;" >
+                           <h3>Category</h3>
+                           <span>&Darr;</span>
+                           </div>
+                           <p style="margin-bottom: 7px;">Computers</p>
+                           <p style="margin-bottom: 7px;">Laptops</p>
+                           <!--brands-->
+                           <h3>Brand</h3>
+                           <select name="brands" id="brands" class="form-control">
+                              <option value="accer">Brand Search</option>
+                           </select>
+                           <div class="form-group">
+                              <div class="col-sm-offset-1">
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Apple </label> 
+                                 </div>
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Google pixel </label> 
+                                 </div> 
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Lenovo</label> 
+                                 </div> 
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Infinix </label> 
+                                 </div>
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Oppo </label>
+                                 </div>
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Nokia </label> 
+                                 </div> 
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Samsung</label>
+                                 </div> 
+                                 <div class="checkbox"> 
+                                    <label><input type="checkbox"> Tecno </label> 
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <!--price-->
+                           <select name="price" id="price" class="form-control">
+                              <option value="accer">Price #</option>
+                           </select>
+                           <div class="form-group">
+                              <div class="col-sm-offset-1">
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Show out of stock</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Price drop</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Shop smart price</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <br>
+                           <!--capacity-->
+                           <div class="heading">
+                           <h4>Capacity</h4>
+                           <span>&Darr;</span>
+                           </div>
+                              <div class="form-group">
+                                 <div class="col-sm-offset-1">
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">2 TB</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">1 TB</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">512 GB</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">256 GB</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">128 GB</label>
+                                    </div>
+                                 </div>
+                              </div>
+                           <!--colour-->
+                           <div class="heading">
+                           <h4>Colour</h4>
+                           <span>&Darr;</span>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-sm-offset-1">
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Black</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Iron</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Gray</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">White</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Silver</label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox">Gold</label>
+                                 </div>
+                                 + Show more
+                              </div>
+                           </div>
+                           <!--core processor-->
+                           <div class="heading">
+                           <h4>Core Processor</h4>
+                           <span>&Darr;</span>
+                           </div>
+                              <div class="form-group">
+                                 <div class="col-sm-offset-1">
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">i3</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">i5</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">i7</label>
+                                    </div>
+                                    <div class="checkbox">
+                                       <label><input type="checkbox">i9</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--hard disk-->
+                              <div class="heading">
+                              <h4>Display Size</h4>
+                              <span>&Darr;</span>
+                              </div>
+                                 <div class="form-group">
+                                    <div class="col-sm-offset-1">
+                                       <div class="checkbox">
+                                          <label><input type="checkbox">1-2 Inches </label>
+                                       </div>
+                                       <div class="checkbox">
+                                          <label><input type="checkbox">2-3 Inches</label>
+                                       </div>
+                                       <div class="checkbox">
+                                          <label><input type="checkbox">3-4 Inches</label>
+                                       </div>
+                                       <div class="checkbox">
+                                          <label><input type="checkbox">4-5 Inches</label>
+                                       </div>
+                                       <div class="checkbox">
+                                          <label><input type="checkbox">5-6 Inches</label>
+                                       </div>
+                                       <br>
+                                       + Show more
+                                    </div>
+                                 </div>
+                                 <!--operating system-->
+                                 <div class="heading">
+                                 <h4>Operating System</h4>
+                                 <span>&Darr;</span>
+                                 </div>
+                                    <div class="form-group">
+                                       <div class="col-sm-offset-1">
+                                          <div class="checkbox">
+                                             <label><input type="checkbox">Andriod</label>
+                                          </div>
+                                          <div class="checkbox">
+                                             <label><input type="checkbox">Apple IOS</label>
+                                          </div>
+                                          <div class="checkbox">
+                                             <label><input type="checkbox">Blackberry OS</label>
+                                          </div>
+                                          <div class="checkbox">
+                                             <label><input type="checkbox">Nokia</label>
+                                          </div>
+                                          <div class="checkbox">
+                                             <label><input type="checkbox">Windows 8</label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--RAM-->
+                                    <div class="heading">
+                                    <h4>RAM</h4>
+                                    <span>&Darr;</span>
+                                    </div>
+                                       <div class="form-group">
+                                          <div class="col-sm-offset-1">
+                                             <div class="checkbox">
+                                                <label><input type="checkbox">1 GB</label>
+                                             </div>
+                                             <div class="checkbox">
+                                                <label><input type="checkbox">2 GB</label>
+                                             </div>
+                                             <div class="checkbox">
+                                                <label><input type="checkbox">3 GB</label>
+                                             </div>
+                                             <div class="checkbox">
+                                                <label><input type="checkbox">4 GB</label>
+                                             </div>
+                                             <div class="checkbox">
+                                                <label><input type="checkbox">6 GB</label>
+                                             </div>
+                                             <br>
+                                             + Show more
+                                          </div>
+                                       </div>
+                                       <!--screen size-->
+                                       <div class="heading">
+                                       <h4>Screen size</h4>
+                                       <span>&Darr;</span>
+                                       </div>
+                                          <div class="form-group">
+                                             <div class="col-sm-offset-1">
+                                                <div class="checkbox">
+                                                   <label><input type="checkbox">7 inch</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                   <label><input type="checkbox">8 inch</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                   <label><input type="checkbox">9 inch</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                   <label><input type="checkbox">10 inch</label>
+                                                </div>
+                                                <div class="checkbox">
+                                                   <label><input type="checkbox">13 inch</label>
+                                                </div>
+                                                <br>
+                                                + Show more
+                                             </div>
+                                          </div>
+                                          <!--special feature-->
+                                          <div class="heading">
+                                             <h4>Special Feature</h4>
+                                             <span>&Darr;</span>
+                                             </div>
+                                             <div class="form-group">
+                                                <div class="col-sm-offset-1">
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">SSD</label>
+                                                   </div>
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">Touch Screen</label>
+                                                   </div>
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">Water proof</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <!--online shop-->
+                                             <h3>Online shop</h3>
+                                             <select name="shop" id="shop-search" class="form-control">
+                                                <option value="onl-search">Online shop search</option>
+                                             </select>
+                                             <div class="form-group">
+                                                <div class="col-sm-offset-1">
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">......</label>
+                                                   </div>
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">...........</label>
+                                                   </div>
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">.......</label>
+                                                   </div>
+                                                   <div class="checkbox">
+                                                      <label><input type="checkbox">.......</label>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                     </div>
+                  </div>
+                  <div class="second-body">
+                     <!-- <div class="main"> -->
+                        <div class="info">
+                           <p>800+ result from 5 stores</p>
+                           <br>
+                           <br>
+                           <h3>Mobile Phone</h3>
+                           <p>
+                              For most people, mobiles are becoming the center of their universe. Whether they want to capture a 
+                              picture and use their cell phones as a camera, navigate their way using GPS, play music or just 
+                              use as a phone or messaging device, a cell phone offers al these things and more. 
+                              <br>
+                              <br>
+                              <a href="#">Show more</a>
+                              <br>
+                           </p>
+                        </div>
+                        <!--first product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/tecnoo.jfif" alt="item-1">
+                           </div>
+                           <div class="text-spa">
+                              <h3>Tecno spark 9T</h3>
+                              <p>32MP Super Clear Selfie 90Hz High Refresh Rate and HD+ Dot Memory
+                                 <br> Fusion 5000mAh Long-lasting Battery Larger Battery Ultra-speed Octa-
+                                 core Processor Iconic Design Tough and Elegant
+                              </p>
+                              <br>
+                              <h4>Starting from <b>$1,400</b></h4>
+                              <p>Compare prices from 4 stores </p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--second product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/nokiaa.jfif" alt="item-1">
+                           </div>
+                           <div class="text">
+                              <h3>Nokia G11</h3>
+                              <p>
+                                 CPU: 12th Gen Intel Core i5/Core i7GPU: Iris XeRAM: 8GB/16GB/32GB
+                                 <br>Storage: 124GB/240GB/1TB SSDDisplay: 14-inch, 1920 x 1200-pixel 16:10 <br> Size:
+                                 12.4 x 8.7 x 0.6 inches, Weight: 2.5 pounds.
+                                 
+                              </p>
+                              <br>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--third product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/tecnoo.jfif" alt="item-1">
+                           </div>
+                           <div class="text">
+                              <h3>Tecno Camon 19 Pro 5G</h3>
+                              <p>
+                                 CPU: 12th Gen Intel Core i5/Core i7GPU: Iris XeRAM: 8GB/16GB/32GB
+                                 <br>Storage: 124GB/240GB/1TB SSDDisplay: 14-inch, 1920 x 1200-pixel 16:10 <br> Size:
+                                 12.4 x 8.7 x 0.6 inches, Weight: 2.5 pounds.
+                                 
+                              </p>
+                              <br>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--fourth product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/apple.jfif" alt="item-1">
+                           </div>
+                           <div class="text-1">
+                              <h3>Apple iphone 13 pro Max</h3>
+                              <p>
+                                 An impressive camera system, weighing a hefty 8.46 ounces/ <br> gigantic 6.7-
+                                 <br>inch OLED screen, the new A15 Bionic chip, and a battery that can handle all
+                                 the 4K videos you throw at it
+                              </p>
+                              <br>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--fifth product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/infinix.jpeg" alt="item-1">
+                           </div>
+                           <div class="text">
+                              <h3>Infinix Note 12 5G</h3>
+                              <p>
+                                 CPU: 12th Gen Intel Core i5/Core i7GPU: Iris XeRAM: 8GB/16GB/32GB
+                                 <br>Storage: 124GB/240GB/1TB SSDDisplay: 14-inch, 1920 x 1200-pixel 16:10 <br> Size:
+                                 12.4 x 8.7 x 0.6 inches, Weight: 2.5 pounds.
+                                 
+                              </p>
+                              <br>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                           <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--sixth product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/galaxy.jpg" alt="item-1">
+                           </div>
+                           <div class="text-gal">
+                              <h3>Galaxy S22Plus(128gb)</h3>
+                              <p>
+                                 The Galaxy S22 Plus features the latest Snapdragon chipset, an excellent 
+                                 <br>6.6-inch display,3 rear cameras including a 3x telephoto, great
+                                 support policy promising <br> up to four generations of Andriod OS upgrades.
+                              </p>
+                              <br>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--seventh product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/infinix.jpeg" alt="item-1">
+                           </div>
+                           <div class="text-inf">
+                              <h3>Infinix Note 12 Pro 5G</h3>
+                              <p>
+                                 CPU: 12th Gen Intel Core i5/Core i7GPU: Iris XeRAM: 8GB/16GB/32GB
+                                 <br>Storage: 124GB/240GB/1TB SSDDisplay: 14-inch, 1920 x 1200-pixel 16:10 Size:
+                                 <br> 12.4 x 8.7 x 0.6 inches, Weight: 2.5 pounds.
+                                 
+                              </p>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--eigth product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/nokiaa.jfif" alt="item-1">
+                           </div>
+                           <div class="text-inf">
+                              <h3>Nokia G11</h3>
+                              <p>
+                                 CPU: 12th Gen Intel Core i5/Core i7GPU: Iris XeRAM: 8GB/16GB/32GB
+                                 <br>Storage: 124GB/240GB/1TB SSDDisplay: 14-inch, 1920 x 1200-pixel 16:10 Size:
+                                 <br> 12.4 x 8.7 x 0.6 inches, Weight: 2.5 pounds.
+                                 
+                              </p>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--ninth product-->
+                        <div class="first-product">
+                           <div class="image">
+                              <img src="images/apple.jfif" alt="item-1">
+                           </div>
+                           <div class="text-appl">
+                              <h3>Apple iphone 13 pro Max</h3>
+                              <p>
+                                 An impressive camera system, weighing a hefty 8.46 ounces/ gigantic 6.7-
+                                 inch OLED screen, <br> the new A15 Bionic chip,a nd a battery that can handle all
+                                 the 4K videos you throw at it
+                              </p>
+                              <h4>Starting from <b>$836</b></h4>
+                              <p>Compare prices from 4 stores</p>
+                              <button><a href="#"> Go to stores <span>&gt;</span></a></button>
+                           </div>
+                        </div>
+                        <!--end of products-->
+                        <!--end of products-->
+                     
+                  </div>
+
+               <!-- </div> -->
+            </div>
+            <!--end of second section-->
+
+            <!--third section-->
+            <div class="container-3">
+               <div class="tail">
+                  <div class="col-md-12 " id="footer">
+                     <!--start of categories-->
+                     <div class="categories">
+                        
+                        <ul>
+                           <li><h2>Categories</h2></li>
+                           <li> Mobiles</li>
+                           <li>Laptops</li>
+                           <li>Tablets</li>
+                           <li>Accessories</li>
+                           <li>Appliances</li>
+                        </ul>
+                     </div>
+                     <!--end of categories-->
+                     <!--start of brands-->
+                     <div class="brands">
+                        
+                        <ul>
+                           <li><h2>Brands</h2></li>
+                           <li>Apple</li>
+                           <li>Samsung</li>
+                           <li>Tecno</li>
+                           <li>Infinix</li>
+                           <li>Nokia</li>
+                           <li>Hp</li>
+                           <li>Lenovo</li>
+                        </ul>
+                     </div>
+                     <!--end of brands-->
+                     <!--start of about us-->
+                     <div class="about-us">
+                        <ul>
+                           <li><h2>Site</h2></li>
+                           <li><a href="#">Abous us</a></li>
+                           <li><a href="#">Team</a></li>
+                           <li><a href="#">Merchant sign up</a></li>
+                           <li><a href="#">User Guide</a></li>
+                        </ul>
+                        
+                     </div>
+   
+                     <!--end of about us-->
+                  </div>
+                  <!-- footerr -->
+                  <div class="foot">
+                     <p>
+                        &copy;2022 Shopsmart.com. All Rights Reserved
+                     </p>
+                  </div>
+            <!-- taile tag -->
+               </div>
+               <!-- container tag -->
+            </div>
+            <!--end of third section-->
+
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+         </div>
+      </div>
+   </div>
+   <!--scrip tags-->
+   <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+ <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
