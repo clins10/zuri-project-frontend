@@ -4,7 +4,7 @@
 body {
 margin: 0;
 font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    background-color: #efefef;
 }
 /*### CREATE FLEX NAV ROW ###*/
 .row {  
@@ -121,20 +121,24 @@ clear: both;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #efefef;
 }
 
 
 /*#### STYLE INNER CONTAINERS ####*/
 div.white-container {
-padding: 20px 20px;
+padding: 20px 0px 0;
 background-color: #fff;
 display: inline-block;
 width: 70%;
 }
-
+.blue {
+    background-color: #053573;
+    color: white;
+    padding-left: 20px;
+}
 .content-container {
-    padding: 0 200px;
+    padding: 100px 200px;
 }
 
 
@@ -204,7 +208,7 @@ a.mail:link, a.mail:visited {
         font-size: 12px;
     }
 h4 {
-    color: blue;
+    color: #053573;
 }
 
 
@@ -216,10 +220,15 @@ a.button:link, a.button:visited {
 margin-left: 0;
     }
 p.email-us {
-margin-left: 0;
+margin-left: 20px;
 }
     .content-container {
-    padding: 0;
+    padding: 20px;
 }
-
+div.white-container {
+padding: 0px;
+background-color: #fff;
+display: inline-block;
+width: 100%;
+}
 }
