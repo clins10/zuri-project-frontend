@@ -1,0 +1,316 @@
+
+*{
+   font-family: 'Poppins', sans-serif ;
+}
+.container{
+   width: 100%;
+   margin: 0 auto;
+   
+}
+.container-1{
+   height: 120px;
+   width: 1499px;
+   margin-bottom: 20px;
+   /* background-color: blue; */
+}
+.container-2{
+   max-width: 100%;
+   max-width: 100vh;
+   display: grid;
+   grid-template-columns: 300px 1199px;
+   grid-template-rows: 2705px;
+   grid-template-areas: "first-body second-body" ;
+}
+.first-body{
+   background-color: white;
+   padding: 10px;
+
+}
+.second-body{
+   /* background-color: red; */
+   background-color: #e3e6e6;
+   padding: 10px;
+}
+
+.container-3{
+   height: 580px;
+}
+
+/* For the header */
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif ;
+   line-height: 1.5em;
+}
+header{
+   border-bottom: 1px solid black;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
+   height: 140px;
+}
+
+.logo{
+   position: relative;
+  max-width: 40px;
+   max-height: 40px;
+   /* left: -100px; */
+}
+.nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   font-size: 15px;
+   font-weight: bold;
+}
+/* for the user in the nav*/
+.user{
+   position: relative;
+   /* right: -30px; */
+   display: flex;
+   justify-content: space-around;
+}
+.user button{
+   background-color: black;
+   width: 150px;
+   color: white;
+   position: relative;
+   padding: 5px;
+   border-radius: 4px;
+   /* right: -90px; */
+}
+.usr{
+   position: relative;
+   right: 15px;
+   background-color: gray;
+   max-width: 20px;
+   max-height: 20px;
+}
+h3{
+   font-size: 18px;
+   font-weight: bold;
+}
+/* list items and link for nav */
+ul{
+   position: relative;
+   top: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+li{
+   list-style: none;
+   text-decoration: none;
+   padding: 20px;
+}
+a{
+   text-decoration: none;
+   color: black;
+   
+}
+.new{
+   float: left;
+   position: relative;
+   left: 760px;
+   top: 5px;
+   /* right: -49px; */
+   
+}
+.new button{
+   background-color: black;
+   color: white;
+   border-radius: 0;
+   width: 100px;
+   padding: 8px;
+   
+
+}
+.new span{
+   position: relative;
+   right: -10px;
+}
+.new input{
+   position: relative;
+   left: -10px;
+   width: 600px;
+   padding: 6px;
+   
+}
+
+/* footer */
+#footer{
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   margin-bottom: 20px;
+   border-bottom: 1px solid gray;
+}
+#footer ul{
+   display: block;
+}
+
+/* footer */
+.foot{
+   position: relative;
+   bottom: 0;
+   text-align: center;
+   /* margin-top: 30px; */
+  
+   /* background-color: yellowgreen; */
+}
+
+/* body */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif ;
+   line-height: 1.5em;
+}
+
+.main{
+   background-color: #e3e6e6;
+   width: 990px;
+   /* margin-left: 31%; */
+   padding: 20px;
+   margin-top: 20px;
+}
+.first-product{
+   height: 230px;
+   display: flex;
+   justify-content: space-between;
+   /* background-color: blueviolet; */
+   margin-bottom: 20px;
+   border-bottom: 1px solid black;
+   /* border-top: 1px solid black; */
+}
+/* etxts for products */
+.first-product .text{
+   position: relative;
+   left: 35px;
+}
+.first-product .text{
+   position: relative;
+   left: -410px;
+}
+.first-product .text-1{
+   position: relative;
+   left: -70px;
+}
+.first-product .text-len{
+   position: relative;
+   left: -45px;
+}
+.first-product .text-app{
+   position: relative;
+   left: -210px;
+}
+.first-product .text-asp{
+   position: relative;
+   left: -410px;
+}
+.first-product .text-pav{
+   position: relative;
+   left: -380px;
+}
+.first-product .text-appp{
+   position: relative;
+   left: -450px;
+}
+.first-product .text-del{
+   position: relative;
+   left: -380px;
+}
+.first-product .text-dell{
+   position: relative;
+   left: -390px;
+}
+.text{
+   position: relative;
+   left: -50px;
+}
+img{
+   position: relative;
+   top: 15px;
+   width: 200px;
+   height: 170px;
+}
+.info{
+   margin-bottom: 20px;
+   border-bottom: 1px solid black;
+}
+a{
+   text-decoration: none;
+   color: black;
+   position: relative;
+   margin-top: 10px;
+   bottom: -2px;
+}
+button{
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 4px;
+   width: 150px;
+   padding: 6px;
+   margin-top: 15px;
+}
+button span{
+   position: relative;
+   right: -15px;
+   padding: 20px;
+   font-weight: bold;
+}
+button a{
+   position: relative;
+   top: -0.5px;
+   text-decoration: none;
+   text-align: center;
+}
+
+/* first body */
+*{
+   padding: 0;
+}
+.nav-1{
+   width: 370px;
+   padding: 10px 10px;
+}
+.nav-1 select{
+   background-color: white;
+   width: 200px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+.nav-1 input {
+   position: relative;
+   left: 2px;
+   margin-bottom: 15px;
+   /* margin-left: 5px; */
+   border: 5px solid black;
+   padding: 30px;
+   width: 50px;
+}
+.heading{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.heading span{
+   background-color: gray;
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   top: 8px;
+   left: -110px;
+   position: relative;
+}
+.heading-1 span{
+   position: relative;
+   top: 9px;
+}
