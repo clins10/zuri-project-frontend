@@ -255,6 +255,7 @@ h4 {
 }
 
 /* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 775px) {
   /*###  AJUST ROW ON MOBILE  ###*/  
   .row {  
