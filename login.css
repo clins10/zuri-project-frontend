@@ -78,7 +78,6 @@ button#login {
 }
 
 button {
-    // background-color:red;
     width: 100%;
     border: none;
     padding: .8em 1em;
@@ -118,6 +117,8 @@ button#logwith a {
 button a:hover {
     color: #000;
 }
+
+
 
 /* FORM-SECTION */
 .form-wrapper {
@@ -165,6 +166,8 @@ input {
     margin: .5em auto;
 }
 
+
+
 /* HORIZONTAL-LINE */
 .horizon-line {
     background-color: #fff;
@@ -206,7 +209,7 @@ input {
 
 
 
-/* MOBILE-VIEW */
+/* MOBILE-VIEW  media query*/
 @media screen and (max-width: 600px) {
     
     .form-wrapper {
@@ -262,7 +265,7 @@ input {
         background-color: #ffff;
         color: #000;
     }
-
+        /* all buttons*/ 
     button {
         width: 94%;
         white-space: wrap;
