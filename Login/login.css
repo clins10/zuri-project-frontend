@@ -1,5 +1,4 @@
 
-/* SEETTING MARGIN AND PADDING TO ) */
 html, body {
     background-color: #fdfdfd;
     margin: 0;
@@ -78,7 +77,6 @@ button#login {
 }
 
 button {
-    // background-color:red;
     width: 100%;
     border: none;
     padding: .8em 1em;
@@ -118,6 +116,7 @@ button#logwith a {
 button a:hover {
     color: #000;
 }
+
 
 /* FORM-SECTION */
 .form-wrapper {
@@ -206,7 +205,8 @@ input {
 
 
 
-/* MOBILE-VIEW */
+
+/* MOBILE-VIEW  media query*/
 @media screen and (max-width: 600px) {
     
     .form-wrapper {
@@ -263,6 +263,7 @@ input {
         color: #000;
     }
 
+ /* all buttons*/ 
     button {
         width: 94%;
         white-space: wrap;

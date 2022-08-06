@@ -1,0 +1,244 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.6rem;
+    
+}
+
+nav a {
+    color: #000000;
+    font-size: 1.6rem;    
+    padding: 0.8rem 0;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: gray;
+    color: gray;
+    justify-self: start;
+    padding: .8rem 4rem;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+.sign-up {
+    grid-area: signup;  
+    justify-self: end;
+    color: #ffffff;
+    padding: .8rem 4rem;
+    text-align: center;
+    background-color: #000;
+    border-radius: .3rem;
+}
+
+
+.nav-links {
+    display: grid;
+    grid-template-areas:
+        "logo logo logo home deals category stores pricetracker  signup signup";
+        margin: 0 auto;
+    width: 96%;
+    max-width: 100%;
+          
+}
+
+
+
+.search-bar {
+    color: #fff;
+    padding: .5rem 0rem;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    width: 98%;
+    align-items: center;
+    // padding: .5rem 2rem;
+}
+
+select {
+    background-color: #000;
+    color: #fff;
+    padding: .6rem .8rem;
+    border: 2px solid #000;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+
+.search {
+    color: #fff;
+    padding: .6em 17.3rem;
+    border: 1px solid #000;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+h1 {
+    align-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "brand-aside       descriptns descriptns"
+        "cat-aside         descriptns descriptns"
+        "prod-description  descriptns descriptns";
+
+        gap: .8rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    width: 96%; 
+    max-width: 100%;
+}
+ 
+/* 1ST LEFT ASIDE*/
+.brand-col {
+    grid-area: brand-aside;
+}
+
+.category-col {
+    grid-area: cat-aside;
+
+}
+
+
+/* OUTER RIGHT-SECTION GRID */
+// .prod-description-wrapper {
+//     grid-area: descriptns;
+//     background-color: green;
+//     max-width: 100%;
+//     width: 100%;
+//     max-height: 100%;
+//     height: 100%;
+// }
+
+
+/* INNER GRID  SECTION */
+.prod-description-wrapper {
+    display: grid;
+    grid-template-areas: 
+        "p-image prod-details prod-details";
+        
+    gap: .5rem;
+    background-color: green;
+    max-width: 100%;
+    width: 100%;    
+    max-height: 100%;
+    height: 100%;
+}
+
+.product-image {
+    // grid-area: p-image;
+    // background-color: red;
+    // max-width: 100%;
+    // width: 100%;
+    // max-height: 50%;
+    // height: 100%;
+    // padding: 0rem 8rem;
+}
+
+.product-image img {
+    display: block;
+    padding: -1rem 0rem;
+    // max-width: 100%;
+    width: 20vw;
+    max-height: 100%;
+    height: 100%;
+} 
+
+.descriptns-wrapper {
+    grid-area: prod-details;
+    background-color: yellow;
+    max-width: 100%;
+    width: 100%;
+    max-height: 50%;
+    height: 100%;
+}
+
+/* BRAND-SELECTION */
+
+aside.brand-col {
+    border: 1px solid;
+    border-radius: .4rem;
+    padding: 2rem;
+    width: 98%;
+    max-width: 100%;
+    
+}
+
+/* Category-Selection */
+aside.category-col {
+    border: 1px solid;
+    border-radius: .4rem;
+    padding: 2rem;
+    width: 98%;
+    max-width: 100%;
+    
+}
+
+
+
+
+
+
+ul  li {
+    list-style-type: none;
+    
+}
+
+/* Pre Footer Section */
+.pre-footer {
+    display: grid;
+    grid-template-areas: 
+        "footer1 footer2 footer3 footer4";
+    gap: .5rem;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 100%;
+    line-height: 2.8rem;
+}
+
+
+.HR {
+    // position: fixed;
+    bottom: 0;
+    padding: 5.1rem 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3.5em 0;
+    // position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    font-size: smaller;
+    text-align: center;
+}
+

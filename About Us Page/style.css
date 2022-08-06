@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background-color: #efefef;
+padding: 0;
+}
+
+.white-bg {
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    }
+    
+/*### CREATE FLEX NAV ROW ###*/
+.row {  
+  display: flex;
+  flex-flow: row wrap;
+    padding: 20px 20px 0 20px;
+}
+
+/* CREATE THREE COLUMN FOR NAV ROW */
+/* Left column */
+.left-column {
+  flex: 10%;
+    text-align: center;
+}
+
+/* Menu column */
+.menu-column {
+  flex: 70%;
+  background-color: white;
+}
+
+
+/* Right column */
+.right-column {
+  flex: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+li a {
+  display: block;
+  color: #000;
+  font-size: 12px;
+  padding: 5px 16px;
+  text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+  color: #ddd;
+}
+
+    
+/*###  STYLE MENU SIGN-IN BUTTON  ###*/
+a.button:link, a.button:visited {
+background-color: #053573;
+color: white;
+padding: 5px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+}
+
+/*###  STYLE MENU SEARCH  ###*/
+.search .search-container {
+  float: right;
+  padding: 0 20px 20px 20px;
+}
+
+.search:after {
+display: table;
+content: "";
+clear: both;
+    }
+    
+.search input[type=text] {
+  padding: 6px 150px 6px 5px;
+  margin-top: 8px;
+  font-size: 14px;
+  border-radius:5px 0 0 5px;
+  border: 1px solid #000;
+  border-right: none;
+  height: 30px;
+  margin-right: -10px;
+}
+
+.search textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+  font-size: 12px;
+}    
+
+.search .search-container button {
+  padding: 9px 10px 9px 10px;
+  margin-top: px;
+  background: #f1f1f1;
+  font-size: 11px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #000;
+  cursor: pointer;
+  color:#000;
+  height: 30px;
+  margin-left: 0;
+  border-left: none;
+}
+  
+/*### STYLE CONTENT SECTION ###*/  
+.about-content, .download {
+    padding: 0px 50px;
+    }
+    
+.title {
+color: #053573;  
+font-size: 30px;
+    }
+.content-unique {
+    margin-top: 80px;
+    }
+.content-para {
+    margin-bottom: 80px;
+    }
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+    font-size: 12px;
+}
+/*#### STYLE DOWNLOAD APP ROW ####*/
+/* Left column */
+.right-content {
+  flex: 70%;
+}
+
+/* Menu column */
+.mobile-image {
+  flex: 30%;
+  text-align: center;
+}
+
+/*### NEWSLETTER UPDATE FORM ###*/
+.update-cover {
+    background-color: moccasin;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.update {
+    width: 70%;
+    margin: auto;
+    background-color: moccasin;
+    text-align: center;
+    }
+
+    
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  width: 60%;
+  background: #fff;
+  margin-right: 5px;
+}
+
+form.example button {
+  width: auto;
+  padding: 10px;
+  background: #053573;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    
+    
+/*### STYLE FOOTER SECTION ###*/
+.footer-col {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+  justify-content: center;
+  padding: 50px 0;
+  font-size: 12.5px;
+  background-color: #efeffe;
+    }
+    
+    .last-row {
+    border-top:1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+    }
+h4 {
+    color: #053573;
+}
+
+/* Responsive layout WITH FLEX - when the screen is less than 700px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 775px) {
+  /*###  AJUST ROW ON MOBILE  ###*/  
+  .row {  
+  display: flex;
+  flex-flow: column;
+}
+/*###  STYLE MENU SEARCH  ###*/
+  .search .search-container {
+  float: none;
+  width: 85%;
+  margin: auto;
+}
+  .search input[type=text] {
+  padding: 20px;
+}
+/*###  WHITE CONTENT BOX  ###*/
+.white-bg {
+    background-color: #fff;
+    width: auto;
+    }
+ /*###  STYLE MENU SEARCH  ###*/   
+.search input[type=text] {
+  padding: 9px 5px 5px 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  border-radius:  0;
+  border: 1px solid #efefef;
+  height: 30px;
+}
+
+::placeholder {
+  font-size: 12px;
+}    
+
+.search .search-container button {
+  padding: 9px 5px 9px 5px;
+  background: #000;
+  font-size: 11px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #efefef;
+  cursor: pointer;
+  color:aliceblue;
+  height: 30px;
+}
+    .update {
+    width: 99%;
+    }
+
+/*### NEWSLETTER UPDATE FORM ###*/
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+    width: 100%;
+}
+
+form.example button {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+}
