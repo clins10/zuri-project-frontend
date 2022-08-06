@@ -1,4 +1,5 @@
 
+/* SEETTING MARGIN AND PADDING */
 html, body {
     background-color: #fdfdfd;
     margin: 0;
@@ -164,7 +165,8 @@ input {
     margin: .5em auto;
 }
 
-/* HORIZONTAL-LINE */
+
+/* HORIZONTAL-LINE  Styling*/
 .horizon-line {
     background-color: #fff;
     text-align: center;
@@ -200,9 +202,6 @@ input {
     color: #F6CC5C;
     
 }
-
-
-
 
 
 
@@ -263,7 +262,7 @@ input {
         color: #000;
     }
 
- /* all buttons*/ 
+/* all buttons style */ 
     button {
         width: 94%;
         white-space: wrap;
