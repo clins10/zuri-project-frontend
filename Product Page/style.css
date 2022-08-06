@@ -10,7 +10,7 @@ padding: 0;
 
 .white-bg {
     background-color: #fff;
-    width: 70%;
+    width: 85%;
     margin: auto;
     }
     
@@ -40,6 +40,7 @@ padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+    font-size: 12px;
 }
 
 nav ul {
@@ -115,7 +116,7 @@ clear: both;
 .search .search-container button {
   padding: 9px 10px 9px 10px;
   margin-top: px;
-  background: #f1f1f1;
+  background: #dcdc00;
   font-size: 11px;
   border-radius: 0 5px 5px 0;
   border: 1px solid #000;
@@ -125,46 +126,57 @@ clear: both;
   margin-left: 0;
   border-left: none;
 }
-  /*### STYLE BRANDS ###*/
-.header {
-    padding: 0 20px;
-}
-.brands {
+  /*### CREATE TWO COLUMNS ###*/
+
+.left {
+    float: left;
+    width: 30%;
     padding: 20px;
-    display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
 }
-.brand-box {
-    display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 65px 20px 20px;
-  border: 1px solid #efefef;
-}
-.brand-box > div {
-  background-color: #f1f1f1;
+.right {
+    float: left;
+    width: 70%;
     padding: 20px;
-    display: inline-block
 }
-.details {
-    padding: 20px;
+.main-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.price-para {
+    margin: 0;
+}
+/*### STYLE STAR ICONS ###*/
+.fa-star {
+    color: #000;
+    margin: 0;
+}
+/*### STYLE FIRST THREE BUTTONS ###*/
+.sam-buttons {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/*### STYLE THREE TAB BUTTONS ###*/
+.tab-buttons {
+    background-color: #efefef;
+    border: none;
+    padding: 10px 20px;
+    margin: 0px;
+}
+.online-shops {
+   background-color: #fff;
+   border-top: 1px solid #000;
 }
 
 /*### STYLE LISTINGS ###*/
-.list-image{
-    float: left;
-    width: 20%;
-    padding: 20px;
-    text-align: center;
-}
+
 .list-content{
     float: left;
-    width: 55%;    
-    padding: 20px 20px 20px 0;
+    width: 75%;    
+    font-size: 12px;
+    padding: 0;
 }
 i {
     margin-right: 10px;
@@ -172,29 +184,87 @@ i {
 .list-button{
     float: left;
     width: 25%;    
-    padding: 20px 20px 20px 0;
+    padding: 30px 20px 30px 0;
 }
 .listing:after {
     content: "";
     clear: both;
     display: table;
 }
-.store {
-    margin-top: 95px;
-    background-color: dimgrey;
+.store-button {
+    background-color: darkblue;
     padding: 10px 25px;
     border: none;
     color: #fff;
     border-radius: 5px;
     font-weight: 600;
-    font-size: 16px,
+    font-size: 12px;
+    margin: 0;
+    float: right;
 }
 .listing {
     border: 1px solid #ddd;
     box-shadow: ;
+    padding: 0 20px;
+    margin: 10px 0;
 }
-.list-padding {
-    padding: 20px 20px;
+/*#### STYLE TOP BUTTON PARAGRAPH ####*/
+.top-button {
+  font-size:12px;  
+    float: right;
+}
+.mobile-button {
+ font-size:12px;
+ margin-left: 19px;
+}
+/*#### STYLE RELATED PRODUCTS ####*/
+.one, .two, .three, .four {
+    float: left;
+    width: 24%;
+}
+.one p, .two p, .three p, .four p{
+    font-size: 12px;
+}
+.related-products {
+    content: "";
+    clear: both;
+    display: table;
+    
+}
+.related-button {
+    background-color: darkblue;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+.next-button { 
+padding-top: 200px;
+}
+/*#### STYLE SPECIFICATIONS ####*/
+.popular, .video {
+  height: 300px;
+    padding-top: 20px;
+}
+.spec-details {
+    
+}
+.spec, ul, {
+    font-size: 12px;
+}
+/*#### STYLE RATING ####*/
+.ratings, .review-box h4 {
+   padding: 0 100px;
+    font-size: 14px;
+}
+
+.review-box::after {
+    content: "";
+    clear: both;
+    display: table;    
+}
+.star-rating {
+    padding-left: 100px;
 }
 /*### STYLE PAGINATION ###*/
 .center {
@@ -214,9 +284,9 @@ i {
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #042D61;
   color: white;
-  border: 1px solid #4CAF50;
+  border: 1px solid #042D61;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
@@ -230,7 +300,6 @@ i {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
 
 /*### STYLE FOOTER SECTION ###*/
 .footer-col {
@@ -250,7 +319,7 @@ i {
         padding: 20px;
         font-size: 12px;
     }
-h4 {
+.footer-col h4 {
     color: #053573;
 }
 
@@ -297,31 +366,34 @@ h4 {
   border-radius: 0 5px 5px 0;
   border: 1px solid #efefef;
   cursor: pointer;
-  color:aliceblue;
+  color: #fff;
   height: 30px;
 }
-    .brands {
-        display: none;
+    /*#### STYLE LIST SECTION ####*/
+    .list-content {
+        float: none;
+        width: 100%;
     }
-    
-.list-image{
+   .list-button, .left, .right {
+        float: none;
+        width: 100%;
+    }
+    .top-button, .store-button, .store-button, .mobile-button { 
     float: none;
-    text-align: center;
-    width: 100%;
+        margin: 0;
 }
-    
-.list-content{
-    float: none;
-    padding: 20px;
-    width: 100%;
+    /*#### STYLE RELATED PRODUCT ####*/
+    .one {
+    float: left;
+    width: 90%;
 }
-.list-button{
-    float: none;  
-    padding: 20px;
-    width: 100%; 
+      .two, .three, .four, .popular, .left, .video {
+    display: none;
 }
-.store {
-    margin-top: 0;
+    .ratings {
+   padding: 0 20px;
 }
-
+    .star-rating {
+    padding-left: 50px;
+}
 }
