@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 0">
+    <title>Latest Edition</title>
+    <link rel="stylesheet" href="NokiaBrands.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,900&display=swap"
+        rel="stylesheet">
+    <!--importing font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="nokiabrand.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav class="nav-links">
+        <a href="#" class="logo"><img src="/img-icons/logo.png" alt="">
+        
+        </a>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="deals">Deals</a>
+        <a href="#" class="category">Categories</a>
+        <a href="#" class="store">Stores</a>
+        <a href="#" class="price">Price Tracker</a>
+        <a href="#" class="sign-up">Sign up</a>
+
+    </nav>
+
+    <!-- END NAVBAR -->
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="what are you shopping for ?" class="search">
+
+       
+        
+        <div class="txt-icon">
+            <p class="search-txt">
+                Search
+            </p>
+           
+            <img src="/img-icons/search-icon.svg" alt="">
+        </div>
+        
+    </div>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- ASIDE SECTION -->
+        <div class="aside-wrapper">
+
+            <!-- CATEGORY-ASIDE -->
+            <aside class="categories">
+                <!-- <form> -->
+                    <div 
+                    class="multipleSelection">
+                        <div class="selectBox" onclick="showCategoryCheckboxes()">
+                            <select>
+                                <option>All Categories</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                
+                        <div id="checkBoxes">
+                            <label for="mobile">
+                                <input type="checkbox" id="mobile" />
+                                Mobile
+                            </label>
+                
+                            <label for="laptops">
+                                <input type="checkbox" id="laptop" />
+                                Laptops
+                            </label>
+                            <label for="tablets">
+                                <input type="checkbox" id="tablets" />
+                                Tablets
+                            </label>
+                            <label for="mobile-accessories">
+                                <input type="checkbox" id="mobile-accessories" />
+                                Mobile Accessories
+                            </label>
+                            <label for="smart-watches">
+                                <input type="checkbox" id="smart-watches" />
+                                Smart Watches
+                            </label>
+
+
+                        </div>
+                    </div>
+                <!-- </form> -->
+
+
+            </aside>
+
+
+            <!-- BRANDS ASIDE -->
+            <aside class="brands">
+
+                <div class="multipleSelection">
+                    <div class="selectBox" onclick="showBrandsCheckboxes()">
+                        <select>
+                            <option>Brands</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+                
+                    <div id="brandsCheckBoxes">
+                        <label for="Tecno">
+                            <input type="checkbox" id="tecno" />
+                            Tecno
+                        </label>
+                
+                        <label for="Apple">
+                            <input type="checkbox" id="apple" />
+                            Apple
+                        </label>
+                        <label for="Samsung">
+                            <input type="checkbox" id="samsung" />
+                            Samsung
+                        </label>
+                        <label for="hp">
+                            <input type="checkbox" id="hp" />
+                            HP
+                        </label>
+                        <label for="lenovo">
+                            <input type="checkbox" id="lenovo" />
+                            Lenovo
+                        </label>
+                        <label for="nokia">
+                            <input type="checkbox" id="nokia" />
+                            Nokia
+                        </label>
+                        <label for="infinix">
+                            <input type="checkbox" id="infinix" />
+                            Infinix
+                        </label>
+                
+                
+                    </div>
+                </div>
+
+
+
+            </aside>
+
+        </div>
+
+        <!-- SECTION -->
+        <div class="section-wrapper">
+            <div class="frst-row">
+                <div class="imge-column">
+                    item-img
+                </div>
+                <div class="item-description">
+                    <h1>
+                        Nokia R20 Edition
+                    </h1>
+                    <p>
+                        CPU: 12th Gen Intel Core i5/Core i7GPU: Iris XeRAM: 8GB/16GB/32GB Storage: 124GB/240GB/1TB SSDDisplay: 14-inch, 1920 x
+                        1200-pixel 16:10Size: 12.4 x 8.7 x 0.6 inchesWeight: 2.5 pounds
+                    </p>
+
+                    <h3>
+                        Starting from $1,000
+                    </h3>
+                    <div class="rating-stars">
+                        <img src="/img-icons/gold-star.png" alt="">
+                        <img src="/img-icons/gold-star.png" alt="">
+                        <img src="/img-icons/gold-star.png" alt="">
+                        <img src="/img-icons/gray-Star.png" alt="">
+                        <img src="/img-icons/gray-Star.png" alt="">
+
+                        <div class="goto">
+                            <a href="http://">
+                                Go to Stores <img src="/img-icons/fwd-arrow.svg" alt="" srcset="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <div class="pre-footer">
+        <div class="footer-col1">
+            <ul>
+                <h3>
+                    Categories
+                </h3>
+                <li>
+                    <a href="#">Mobiles</a>
+                </li>
+                <li>
+                    <a href="#">Laptops</a>
+                </li>
+                <li>
+                    <a href="#">Tablets</a>
+                </li>
+                <li>
+                    <a href="#">Accessories</a>
+                </li>
+                <li>
+                    <a href="#">Appliances</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="footer-col2">
+            <ul>
+                <h3>
+                    Brands
+                </h3>
+                <li>
+                    <a href="#">Apple</a>
+                </li>
+                <li>
+                    <a href="#">Samsung</a>
+                </li>
+                <li>
+                    <a href="#">Tecno</a>
+                </li>
+                <li>
+                    <a href="#">Infinix</a>
+                </li>
+                <li>
+                    <a href="#">Nokia</a>
+                </li>
+                <li>
+                    <a href="#">HP</a>
+                </li>
+                <li>
+                    <a href="#">Lenovo</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col3">
+            <ul>
+                <h3>
+                    Site
+                </h3>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li>
+                    <a href="#">Merchant Sign up</a>
+                </li>
+                <li>
+                    <a href="#">User Guide</a>
+                </li>
+                <li>
+                    <a href="#">User Guide</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-col4">
+            <ul>
+                <h3>
+                    Support
+                </h3>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+                <li>
+                    <a href="#">Help Center</a>
+                </li>
+                <li>
+                    <a href="#">Merchant Sign up</a>
+                </li>
+                <li>
+                    <a href="#"> Reviews</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="HR">
+    <footer>
+        <div class="footer-copyright">
+            <p>&copy 2020 shopsmart.com. All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
