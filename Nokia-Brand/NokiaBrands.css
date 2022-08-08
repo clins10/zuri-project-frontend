@@ -36,33 +36,31 @@ a {
     text-align: center;
 }
 
-// .logo img {
-    // height: 10vh;
-// }
-
 .sign-up {
     grid-area: signup;  
     justify-self: end;
-    color: #ffffff;
     padding: 1.2rem 3rem;
     text-align: center;
-    // background-color: rgb(43, 43, 119);
-    background: #053674;
     border-radius: .3rem;
 }
 
+.user-avatar-n-txt {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
 
 .nav-links {
     display: grid;
     grid-template-areas:
         "logo logo logo home deals category stores pricetracker  signup signup signup";
         margin: 0 auto;
-    width: 96%;
+    width: 100%;
     align-items: center;
     max-width: 100%;
           
 }
-
 
 
 .search-bar {
@@ -86,10 +84,10 @@ a {
 .txt-icon {
     display: flex;
     background: rgba(246, 204, 92, 0.75);
-    padding: .6rem .6rem;
+    padding: .7rem .6rem;
     position: absolute;
     align-items: center;
-    left: 92.9%;
+    left: 93.15%;
     gap: 1rem;
 }
 
@@ -105,183 +103,186 @@ a {
     filter: brightness(0);
 }
 
-h1 {
-    align-content: center;
-    text-align: center;
-    padding: 2rem 0;
+.frst-hr {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 3rem 0;
 }
 
-/* ASIDE-WRAPPER */
-.aside-wrapper {
-    // background-color: rgb(158, 224, 250);
-    background: #F9FAFC
+.header {
+    margin-top: -2rem;
+    margin-left: 5rem;
 }
 
-
-/* All Categories */
-
-.selectBox {
-    position: relative;
+.header a {
+    color: #000;
 }
-  
-.selectBox select {
-    width: 94%;
+
+a.ac-tive {
+    text-decoration: underline;
+    color: gold
+}
+
+.brand-header{
+    // font-size: 2.5rem;
     font-weight: bold;
-    padding: 0rem 1rem;
-    margin-top: 2rem;
-    border: none;
-    color: rgb(43, 43, 119);
-    background-color: #F9FAFC    
+    color: #000;
+    text-align: start;
+    margin: 0 auto;
+    padding:  0rem 5rem;
 }
-  
-.overSelect {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-  
-#checkBoxes {
-    display: none;
-    padding: .8rem 2.8rem;
-    color: rgb(43, 43, 119);
-}
-  
-#checkBoxes label {
-    display: block;
+/* Brands Slides  */
+.brands-slides {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
-/* Brands*/ 
-#brandsCheckBoxes {
-    display: none;
-    padding: .8rem 2.8rem;
-    color: rgb(43, 43, 119);
+.brand-slide-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 96%;
+    max-width: 100%;
+    // background-color: aqua;
+    justify-content: center;
+    align-items: center;
 }
 
-#brandsCheckBoxes label {
-    display: block;
+#leno-vo {
+    padding:  5rem 3.5rem;
+    margin: 2rem;
 }
-  
+
+#no-kia {
+    padding:  5.2rem 5.6rem;
+    margin: 2rem;
+}
+
+.brand-slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 0rem;
+    border-radius: .6rem;
+    border: 1px solid rgb(138, 128, 128);
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(110, 83, 83, 0.1);
+    transition: all .3s ease-in-out;
+    gap: 1rem;
+    margin: 1rem;
+}
 
 
+/* Nokia Brand Description */ 
+.about-brand {
+    display: grid;
+    grid-template-rows: 1fr;
+    max-width: 100%;
+    width: 96%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    // background-color: red;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MAIN-DESCRIPTION*/
 main {
     display: grid;
     grid-template-areas: 
-        "cat-aside         descriptns descriptns"
-        "brand-aside       descriptns descriptns"
-        "prod-description  descriptns descriptns";
-
-        gap: .8rem;
+        "section-col";
+        
+        gap: 2rem;
         margin: 0 auto;
-        margin-bottom: 4rem;
     width: 96%; 
     max-width: 100%;
+    margin-bottom: 6rem;
 }
  
-/* 1ST LEFT ASIDE*/
 
-.category-col {
-    grid-area: cat-aside;
+/* ITEM-DESCRIPTION-SECTION*/
+.section-wrapper {
+    grid-area: section-col;
+    background-color: #F9FAFC;
+    
 
 }
 
-.brand-col {
-    grid-area: brand-aside;
-}
 
-/* OUTER RIGHT-SECTION GRID */
-// .prod-description-wrapper {
-//     grid-area: descriptns;
-//     background-color: green;
-//     max-width: 100%;
-//     width: 100%;
-//     max-height: 100%;
-//     height: 100%;
-// }
-
-
-/* INNER GRID  SECTION */
-.prod-description-wrapper {
+/* ITEM-DESCRIPTION-ROW */
+.section-row {
     display: grid;
-    grid-template-areas: 
-        "p-image prod-details prod-details";
-        
-    gap: .5rem;
-    background-color: green;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 98%; 
     max-width: 100%;
-    width: 100%;    
-    max-height: 100%;
-    height: 100%;
+    background-color: white;
+    // background-color: rgb(119, 146, 146);
+    margin-bottom: 4rem;
+    border-radius: .4rem;
     margin-top: 4rem;
 }
-
-.product-image {
-    // grid-area: p-image;
-    // background-color: red;
-    // max-width: 100%;
-    // width: 100%;
-    // max-height: 50%;
-    // height: 100%;
-    // padding: 0rem 8rem;
+.imge-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.product-image img {
-    display: block;
-    padding: -1rem 0rem;
-    // max-width: 100%;
-    width: 20vw;
-    max-height: 100%;
-    height: 100%;
-} 
+.item-description {
+    margin-top: 4rem;
 
-.descriptns-wrapper {
-    grid-area: prod-details;
-    background-color: yellow;
-    max-width: 100%;
-    width: 100%;
-    max-height: 50%;
-    height: 100%;
+}
+.item-price {
+    display: flex;
+    gap: 1rem;
+    padding:  .6rem 0;
+}
+.checkout-store {
+  display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-self: end;
+    padding: 0 2rem;
+}
+.goto {
+    display: flex;
+    white-space: nowrap;
+    background: #053674;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+}
+.goto p {
+    display: flex;
+    color: #fff;
+    gap: 1rem;
 }
 
-/* BRAND-SELECTION */
-
-aside.brand-col {
-    border: 1px solid;
-    border-radius: .4rem;
-    padding: 2rem;
-    width: 98%;
-    max-width: 100%;
-    
+.goto-arrw {
+    height: 2.5vh;
 }
 
-/* Category-Selection */
-aside.category-col {
-    border: 1px solid;
-    border-radius: .4rem;
-    padding: 2rem;
-    width: 98%;
-    max-width: 100%;
-    
+.rating-stars img {
+    height: 4vh;
 }
 
-
-
+.see-more {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 3rem 3rem;
+    margin-top: -4rem;
+}
+.see-more img {
+    height: 2vh;
+    filter: brightness(0);
+}
 
 
 
@@ -295,35 +296,76 @@ ul  li {
     display: grid;
     grid-template-areas: 
         "footer1 footer2 footer3 footer4";
-    gap: .5rem;
+    gap: 1rem;
     margin: 0 auto;
     width: 80%;
     max-width: 100%;
     line-height: 2.8rem;
+    padding: 2rem 0;
 }
 
+ .pre-footer h3 {
+    margin: 1rem 0;
+    color: #053674;
+}
 
+.pre-footer a {
+    color: #000000;
+    text-decoration: none;
+}
 .HR {
-    // position: fixed;
-    bottom: 0;
-    padding: 5.1rem 0;
     width: 100%;
     margin: 0 auto;
+    border-bottom: 1px solid #000;
+    margin-bottom: -6rem;
+    // margin-top: 2rem;
 }
 
 /* FOOTER */
+.footer-wrapper {
+    background: #E5EBF3;
+    
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 3.5em 0;
-    // position: fixed;
     bottom: 0;
 }
 
 footer p {
     font-size: smaller;
-    text-align: center;
+    bottom: 0;
 }
 
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -6rem;
+    
+}
+
+// mdeia queries
+@media screen and (max-width: 768px) {
+    .header {
+        margin-left: 0;
+    }
+    .logo img {
+        display: none;
+    }
+
+    .brand-header {
+        text-align: center;
+        padding: 0;
+    }
+    .brands-slide {
+    display: grid;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+    
+}
