@@ -319,26 +319,22 @@ h1 {
 .goto {
     background-color: #053674;
     padding: .8rem 1.2rem;
+    margin: 0 auto;
     font-size: small;
     align-items: center;
     justify-content: center;
     margin-left: 6rem;
-    
-    
+    border-radius: .3rem;
 }
 
-.slot-price {
-    // margin-left: rem;
-    
-}
 .goto p {
+    display: flex;
     color: #fff;
-    text-align: center;
-    // padding: 0 0 .4rem 0;
+    gap: 1rem;
 }
 
 .goto-arrw {
-    height: 2vh;
+    height: 3vh;
     
 }
 
@@ -349,13 +345,17 @@ h1 {
 .see-more {
     display: flex;
     justify-content: end;
-    align-items: center;
     padding: 3rem 3rem;
     margin-top: -4rem;
 }
 .see-more img {
-    height: 2vh;
+    height: 3.5vh;
     filter: brightness(0);
+}
+.see-more p {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 
