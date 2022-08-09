@@ -85,11 +85,11 @@ a {
 .txt-icon {
     display: flex;
     background: rgba(246, 204, 92, 0.75);
-    padding: .7rem .6rem;
+    padding: .4rem .7rem;
     position: absolute;
     align-items: center;
     left: 93.15%;
-    gap: 1rem;
+    // gap: 1rem;
 }
 
 
@@ -121,8 +121,8 @@ a {
 }
 
 a.ac-tive {
-    text-decoration: underline;
-    color: gold
+    // text-decoration: underline;
+    color: rgb(6, 6, 207);
 }
 
 /* Brands Slides  */
@@ -136,25 +136,28 @@ a.ac-tive {
 }
 
 .brand-slide-container {
-    white-space: wrap;
+    // white-space: wrap;
     display: grid;
-    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: 22%;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    overflow-x: scroll;
     margin: 0 auto;
-    width: 96%;
+    width: 94%;
     max-width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 #leno-vo {
-    padding:  5rem 3.5rem;
-    margin: 2rem;
+    padding:  3.4rem 3.5rem;
+    // margin: 2rem;
 }
 
 #no-kia {
-    padding:  5.2rem 5.6rem;
-    margin: 2rem;
+    padding:  4.2rem 8rem;
+    // margin: 2rem;
 }
 
 .brand-slide-item {
@@ -162,14 +165,20 @@ a.ac-tive {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2.5rem 0rem;
+    padding: 1rem 1rem;
     border-radius: .6rem;
     border: 1px solid rgb(138, 128, 128);
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(110, 83, 83, 0.1);
     transition: all .3s ease-in-out;
-    gap: 1rem;
+    // gap: .5rem;
     margin: 1rem;
+}
+
+.on-focus {
+    border-top-color: #053674;
+    border-top-width: .7rem;
+
 }
 
 
@@ -365,11 +374,14 @@ footer p {
     }
 
     .search {
-    padding: 0.6em 8.3rem;
+    padding: 0.6em 8.7rem;
     border: 1px solid #000;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     margin: auto;
+    }
+    .search input {
+        text-align: left;
     }
 
     .txt-icon {
@@ -377,9 +389,44 @@ footer p {
     }
      
     .user-avatar-n-txt {
-        display:none
+        // display:none
     }
     
+    #leno-vo {
+        padding: 3.6rem 0rem;
+    }
+
+    #leno-vo img {
+        padding: 0rem .5rem;
+    }
+
+    #no-kia {
+    padding: 4rem 0rem;
+   
+    }
+    #no-kia img {
+        padding: 0rem .5rem;
+    }
+
+
+    .brand-slide-container {
+        gap: 1rem;
+    }
+    .brand-slide-item{
+        margin: 0 auto;
+        width: 98%;
+        max-width: 100%;
+        padding: 3.5rem 1.8rem;
+    } 
+
+
+    .brand-slide-item img{
+        width: 100%;
+        height: auto;
+    } 
+
+
+
     .pre-footer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -392,3 +439,25 @@ footer p {
     }
     
 }
+
+@media screen and (min-width: 576px) and (max-width: 1020px) {
+    input.search {
+    display: flex;
+    margin-right: 3.5rem;
+    padding: .9rem 12rem;
+    justify-content: flex-end;
+
+    }
+
+    #no-kia {
+    padding: 8rem 0rem;
+   
+    }
+
+    #leno-vo {
+        padding: 7.8rem 0rem;
+    }
+
+
+}
+    
