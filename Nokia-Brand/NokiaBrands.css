@@ -64,10 +64,11 @@ a {
 
 
 .search-bar {
+    display: grid;
+    grid-template-rows: 1fr;
     color: #fff;
     padding: -1.5rem 0rem;
-    display: flex;
-    justify-content: flex-end;
+    justify-items: end;
     max-width: 100%;
     width: 98%;
     align-items: center;
@@ -124,29 +125,24 @@ a.ac-tive {
     color: gold
 }
 
-.brand-header{
-    // font-size: 2.5rem;
-    font-weight: bold;
-    color: #000;
-    text-align: start;
-    margin: 0 auto;
-    padding:  0rem 5rem;
-}
 /* Brands Slides  */
 .brands-slides {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-areas:
+        ".";
+
     margin: 0 auto;
     max-width: 100%;
 }
 
 .brand-slide-container {
+    white-space: wrap;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     margin: 0 auto;
     width: 96%;
     max-width: 100%;
-    // background-color: aqua;
     justify-content: center;
     align-items: center;
 }
@@ -214,7 +210,7 @@ main {
 /* ITEM-DESCRIPTION-ROW */
 .section-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
     margin: 0 auto;
     width: 98%; 
@@ -318,7 +314,7 @@ ul  li {
     margin: 0 auto;
     border-bottom: 1px solid #000;
     margin-bottom: -6rem;
-    // margin-top: 2rem;
+
 }
 
 /* FOOTER */
@@ -348,24 +344,51 @@ footer p {
     
 }
 
-// mdeia queries
+/* MEDIA QUERY */
 @media screen and (max-width: 768px) {
-    .header {
-        margin-left: 0;
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-wrap: hidden;
     }
-    .logo img {
+    .nav-links, .search-bar {
+        overflow: hidden;
+    }
+    #lo-go {
         display: none;
     }
 
-    .brand-header {
-        text-align: center;
-        padding: 0;
+    .nav-links {
+        display: grid;
+        align-items: center;
+        gap: 1rem;
     }
-    .brands-slide {
-    display: grid;
-    align-content: center;
-    width: 90%;
-    margin: 0 auto;
-}
+
+    .search {
+    padding: 0.6em 8.3rem;
+    border: 1px solid #000;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: auto;
+    }
+
+    .txt-icon {
+        margin-left: -7.7rem;
+    }
+     
+    .user-avatar-n-txt {
+        display:none
+    }
+    
+    .pre-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        margin: 0 auto;
+        width: 70%;
+        max-width: 100%;
+        font-size: x-small;
+        justify-content: center;
+        // align-items: center;
+    }
     
 }
